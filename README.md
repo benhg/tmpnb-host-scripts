@@ -1,1 +1,1 @@
-# pandas-tutorial-tmpnb
+# tmpnb-init-scripts

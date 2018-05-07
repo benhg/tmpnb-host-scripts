@@ -16,5 +16,5 @@ tmpnb_orchestrate:
     CONFIGPROXY_AUTH_TOKEN: 716238957362148752139417234
   volumes:
     - /var/run/docker.sock:/docker.sock
-  command: python orchestrate.py --image='pandas-tutorial' --command='jupyter notebook --no-browser --port 8888 --ip=0.0.0.0 --NotebookApp.base_url=/{base_path} --NotebookApp.port_retries=0 --NotebookApp.token="" --NotebookApp.disable_check_xsrf=True'
+  command: python orchestrate.py --image='pandas-tutorial' --command='jupyter notebook --no-browser --port {port} --ip=0.0.0.0 --NotebookApp.base_url=/{base_path} --NotebookApp.port_retries=0 --NotebookApp.token="" --NotebookApp.disable_check_xsrf=True'
 
